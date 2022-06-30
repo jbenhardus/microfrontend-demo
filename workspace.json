@@ -1,5 +1,17 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "blue": "apps/blue",
+    "blue-e2e": "apps/blue-e2e",
+    "feature": "libs/feature",
+    "green": "apps/green",
+    "green-e2e": "apps/green-e2e",
+    "host": "apps/host",
+    "host-e2e": "apps/host-e2e",
+    "red": "apps/red",
+    "red-e2e": "apps/red-e2e",
+    "state": "libs/state",
+    "ui": "libs/ui"
+  }
 }

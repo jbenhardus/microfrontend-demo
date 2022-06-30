@@ -1,0 +1,6 @@
+<div class="votes-container" *ngIf="voteItems">
+  <div class="vote" *ngFor="let item of voteItems">
+    <div class="vote-label">{{ item.label }}</div>
+    <div class="vote-count">{{ item.count }}</div>
+  </div>
+</div>

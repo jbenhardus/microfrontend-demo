@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/feature/src",
+  "prefix": "microfrontend-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature"],
+      "options": {
+        "jestConfig": "libs/feature/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/feature/**/*.ts", "libs/feature/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
