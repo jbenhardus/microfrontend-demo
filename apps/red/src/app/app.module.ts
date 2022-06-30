@@ -27,7 +27,6 @@ import { RouterModule } from '@angular/router';
       { initialNavigation: 'enabledBlocking' }
     ),
   ],
-  providers: [{ provide: 'VOTE_KEY', useValue: 'red' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

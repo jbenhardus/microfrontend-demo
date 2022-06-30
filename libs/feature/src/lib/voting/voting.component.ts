@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./voting.component.less'],
 })
 export class VotingComponent {
-  // voteItems$: Observable<VoteItem[]> = this.facade.voteItems$;
-  // color$: Observable<string> = this.facade.color$;
-  // label$: Observable<string> = this.facade.label$;
-  // constructor(private facade: VotesFacade) {}
-  // vote() {
-  //   this.facade.vote();
-  // }
+  voteItems$: Observable<VoteItem[]> = this.facade.voteItems$;
+  color$: Observable<string> = this.facade.color$;
+  label$: Observable<string> = this.facade.label$;
+  constructor(private facade: VotesFacade) {}
+  vote() {
+    this.facade.vote();
+  }
 }

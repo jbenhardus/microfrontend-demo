@@ -19,6 +19,6 @@ import { StateModule } from '@microfrontend-demo/state';
       },
     ]),
   ],
-  providers: [],
+  providers: [{ provide: 'VOTE_KEY', useValue: 'green' }],
 })
 export class RemoteEntryModule {}

@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { RemoteEntryComponent } from './entry.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { FeatureModule } from '@microfrontend-demo/feature';
+import { StateModule } from '@microfrontend-demo/state';
 
 @NgModule({
-  declarations: [RemoteEntryComponent, NxWelcomeComponent],
+  declarations: [RemoteEntryComponent],
   imports: [
     CommonModule,
+    FeatureModule,
+    StateModule,
     RouterModule.forChild([
       {
         path: '',
@@ -16,6 +19,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
       },
     ]),
   ],
-  providers: [],
+  providers: [{ provide: 'VOTE_KEY', useValue: 'red' }],
 })
 export class RemoteEntryModule {}

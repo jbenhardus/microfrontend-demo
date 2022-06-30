@@ -7,7 +7,7 @@ import { StateModule } from '@microfrontend-demo/state';
 
 @NgModule({
   declarations: [ShellComponent],
-  imports: [CommonModule, FeatureModule],
+  imports: [CommonModule, FeatureModule, StateModule],
   exports: [ShellComponent],
 })
 export class ShellModule {}

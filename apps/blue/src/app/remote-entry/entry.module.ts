@@ -17,6 +17,6 @@ import { ShellModule } from '../shell/shell.module';
       },
     ]),
   ],
-  providers: [],
+  providers: [{ provide: 'VOTE_KEY', useValue: 'blue' }],
 })
 export class RemoteEntryModule {}

@@ -31,7 +31,6 @@ import { StateModule } from '@microfrontend-demo/state';
       { initialNavigation: 'enabledBlocking' }
     ),
   ],
-  providers: [{ provide: 'VOTE_KEY', useValue: 'blue' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

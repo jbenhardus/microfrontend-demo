@@ -7,11 +7,11 @@ import { VotesFacade } from '@microfrontend-demo/state';
   styleUrls: ['./shell.component.less'],
 })
 export class ShellComponent {
-  // constructor(private facade: VotesFacade) {}
-  // ngOnInit(): void {
-  //   // this.facade.registerCategory({
-  //   //   label: 'Blue',
-  //   //   color: '#0000ff',
-  //   // });
-  // }
+  constructor(private facade: VotesFacade) {}
+  ngOnInit(): void {
+    this.facade.registerCategory({
+      label: 'Blue',
+      color: '#0000ff',
+    });
+  }
 }
