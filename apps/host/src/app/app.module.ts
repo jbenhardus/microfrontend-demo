@@ -8,6 +8,10 @@ import { loadRemoteModule } from '@nrwl/angular/mfe';
 import { StoreModule } from '@ngrx/store';
 import { StateModule } from '@microfrontend-demo/state';
 import { FeatureModule } from '@microfrontend-demo/feature';
+import { RedLoaderModule } from './red-loader/red-loader.module';
+import { GreenLoaderModule } from './green-loader/green-loader.module';
+import { BlueLoaderModule } from './blue-loader/blue-loader.module';
+import { ColorOutputModule } from './color-output/color-output.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -15,6 +19,10 @@ import { FeatureModule } from '@microfrontend-demo/feature';
     BrowserModule,
     StateModule,
     FeatureModule,
+    RedLoaderModule,
+    GreenLoaderModule,
+    BlueLoaderModule,
+    ColorOutputModule,
     StoreModule.forRoot({}),
     RouterModule.forRoot(
       [

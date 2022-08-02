@@ -11,7 +11,7 @@ export class RemoteEntryComponent implements OnInit {
   ngOnInit() {
     this.facade.registerCategory({
       label: 'GREEN',
-      color: '#00ff00',
+      color: '#007700',
     });
   }
 }

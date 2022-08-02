@@ -1,10 +1,15 @@
-<microfrontend-demo-vote-button
-  [color]="color$ | async"
-  [label]="label$ | async"
-  (voted)="vote()"
-></microfrontend-demo-vote-button>
-<microfrontend-demo-vote-count
-  [voteItems]="voteItems$ | async"
-></microfrontend-demo-vote-count>
-
-Voting Works!
+<div class="voting-container">
+  <div class="button-container">
+    <microfrontend-demo-vote-button
+      class="vote-button"
+      [color]="color$ | async"
+      [label]="label$ | async"
+      (voted)="vote()"
+    ></microfrontend-demo-vote-button>
+  </div>
+  <div class="count">
+    <microfrontend-demo-vote-count
+      [voteItems]="voteItems$ | async"
+    ></microfrontend-demo-vote-count>
+  </div>
+</div>

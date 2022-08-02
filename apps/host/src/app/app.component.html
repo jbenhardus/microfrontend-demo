@@ -1,7 +1,23 @@
-<ul class="remote-menu">
+<!-- <ul class="remote-menu">
   <li><a routerLink="/">Home</a></li>
   <li><a routerLink="red">Red</a></li>
   <li><a routerLink="blue">Blue</a></li>
   <li><a routerLink="green">Green</a></li>
 </ul>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<div class="app-container">
+  <div class="shells">
+    <div class="shell">
+      <microfrontend-demo-red-shell></microfrontend-demo-red-shell>
+    </div>
+    <div class="shell">
+      <microfrontend-demo-green-shell></microfrontend-demo-green-shell>
+    </div>
+    <div class="shell">
+      <microfrontend-demo-blue-shell></microfrontend-demo-blue-shell>
+    </div>
+  </div>
+  <div class="color-output">
+    <microfrontend-demo-color-output></microfrontend-demo-color-output>
+  </div>
+</div>

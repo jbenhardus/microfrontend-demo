@@ -1,0 +1,8 @@
+<div class="output-container" [style.background-color]="color$ | async">
+  <div class="winning" [style.color]="textColor$ | async">
+    {{ winner$ | async }}
+  </div>
+  <div class="color" [style.color]="textColor$ | async">
+    {{ color$ | async }}
+  </div>
+</div>

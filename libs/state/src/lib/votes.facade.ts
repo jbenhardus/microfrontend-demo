@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@angular/core';
+import { Inject, Injectable, Optional } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import * as votesSeletors from './votes/votes.selectors';
 import * as VotesActions from './votes/votes.actions';
@@ -12,7 +12,7 @@ export class VotesFacade {
 
   constructor(
     private store: Store,
-    @Inject('VOTE_KEY') private voteKey: string
+    @Optional() @Inject('VOTE_KEY') private voteKey: string
   ) {}
 
   vote() {
